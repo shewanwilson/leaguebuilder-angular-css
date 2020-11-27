@@ -1,0 +1,33 @@
+<form>
+    <div id="new-league-table">
+            <table>    
+            <!-- <input *ngFor="let teamInput of teamInputs; let i = index" id="team_{{i + 1}}" type="text" placeholder="Team {{i + 1}}"> -->
+            <thead>
+            <tr>    
+            <th>Team Name</th><th>Games Played</th><th>Won</th><th>Drawn</th><th>Lost</th><th>Goals For</th><th>Goals Against</th><th>Points</th>
+            </tr>
+            </thead>            
+            <tr *ngFor="let teamRow of teamRows; let i = index" id="team_{{i + 1}}">
+                <td>
+                    <input type="text" placeholder="Team {{i + 1}}">
+                </td>
+                <td class="input-table-data"><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                <td><input type="number" class="team-row-inputs"></td>
+                
+            </tr>
+            </table>    
+    </div>
+    <div id="buttons">
+        <!-- TODO:
+            - Prevent user deleting value from team amount input
+                -->
+        <input (change)="amendTeamRows($event.target.value)" type="number" id="number-of-teams" min=2 max=10 value=10>
+        <input type="button" value="Create League">
+                
+    </div>    
+</form>

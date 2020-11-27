@@ -1,0 +1,37 @@
+*{
+    color: black;
+}
+form{
+    background-color: lavender;
+    width:  70%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 75% 25%; 
+}
+div{
+    border: red solid 2px;
+}
+
+#new-league-table, table{
+    width: 100%;
+}
+#number-of-teams{
+    display: block;
+    width: 50%;
+    
+}
+.input-table-data{
+    
+}
+.team-row-inputs{
+    width: 90%;
+        
+}
+
+#team-amount{
+    width: 100%;
+}

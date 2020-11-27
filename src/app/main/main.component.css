@@ -1,0 +1,12 @@
+app-main{
+    /* height: 100%;
+    width: 100%;
+    background-color: tomato; */
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    position: relative;
+}
